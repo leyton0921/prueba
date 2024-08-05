@@ -32,7 +32,15 @@ const verificar = async () => {
         return;
     }
 
+    
+    if (userPassword !== passwordConfirmation) { 
+        alert("Las contraseñas deben coincidir")
+        return false
+    }
+    
+
     await createUser();
+
 }
 
 const createUser = async () => { 

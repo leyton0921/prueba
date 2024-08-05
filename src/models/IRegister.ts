@@ -1,4 +1,4 @@
-export interface IUserRegister { // se crea la interface para realizar la estructura del objeto que se envía al json-server por medio de la petición 'POST'.
+export interface IUserRegister { 
     email : string,
     password : string
 }

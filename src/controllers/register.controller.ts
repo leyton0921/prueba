@@ -35,15 +35,5 @@ export class UserVerifications {
         return true;
     }
 
-    passwordVerification (user : IUserVerification) : boolean {
-
-        const {password, passwordConfirmation} = user;
-
-        if (password !== passwordConfirmation) { 
-            return false;
-        }
-        
-        return true;
-    }
 }
 

@@ -1,13 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <a href="./src/view/register.html">jiji</a>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/login.css">
+    <title>Document</title>
+</head>
+<body>
+        <form id="login-form">
+            <h1>Bienvenido</h1>
+            <input type="email" id="email" placeholder="Correo">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button type="submit">Iniciar Sesion</button>
+            <a href="/src/view/register.html">Registrarse</a>
+        </form>
+    <script type="module" src="/src/typeScript/register.ts"></script>
+</body>
 </html>
