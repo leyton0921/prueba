@@ -8,7 +8,7 @@ const main = document.querySelector("#main") as HTMLDivElement ;
 const logoutButton = document.querySelector("#logout-button") as HTMLButtonElement;
 const session = sessionStorage.getItem('token');
 
-const cardSection = document.querySelector('#carts-section') as HTMLElement;
+const cardSection = document.querySelector('.carts-section') as HTMLElement;
 
 
 const url:string = 'https://api-posts.codificando.xyz/';
@@ -39,8 +39,8 @@ async function showPost() {
         const citiesController = new postsControllers(url);
         const posts = await citiesController.getPosts('posts');
         console.log('Fetched posts:', posts); 
-        posts.forEach(Card => {
-            cardSection?.append(Card(Card));
+        posts.forEach(card => {
+            cardSection.append(Card(card));
         });
     } catch (error) {
         console.error('Error fetching posts:', error);

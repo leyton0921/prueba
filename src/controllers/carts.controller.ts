@@ -52,7 +52,8 @@ export const Card = (props:IPosts):HTMLElement=>{
         // Almacena el ID de la ciudad para actualizar
         const userIdInput = document.querySelector("#id") as HTMLInputElement;
         if (userIdInput) {
-            userIdInput.value = String(id); // Convertimos el id a string
+            // Convertimos el id a string
+            userIdInput.value = String(id); 
         }
     });
 
