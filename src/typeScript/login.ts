@@ -5,10 +5,12 @@ const url = 'https://api-posts.codificando.xyz/auth/login';
 const loginForm = document.querySelector("#login-form") as HTMLFormElement;
 const email = document.querySelector("#email") as HTMLInputElement;
 const password = document.querySelector("#password") as HTMLInputElement;
+const loading = document.querySelector("#loading") as HTMLDivElement;
 
 
 loginForm.addEventListener("submit", async (event : Event) => {
   event.preventDefault();
+  loading.style.display = "flex"; 
   
   const usuario = {
     email : email.value,
