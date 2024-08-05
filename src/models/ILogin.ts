@@ -1,4 +1,8 @@
-export interface IUserLogin { 
-    email : string,
-    password : string
+export interface ILogin {
+    email:    string;
+    password: string;
+}
+
+export interface IResponseLogin {
+    token : string 
 }

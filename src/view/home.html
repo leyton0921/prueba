@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+      
+           
+    <button type="button" id="crearPost">Crear Publicacion</button>
+    </header>
+    <div class="ocultar" id="main">
+
+            <form action="" id="create-posts">
+                <input type="hidden" id="id">
+                <input type="hidden" id="postsByUser">
+                <input type="text" id="titulo-post" placeholder="ingrese un titulo">
+                <input type="text" id="body-post" placeholder="descripcion de la Publicacion">
+                <input type="hidden" id="creacion-fecha">
+                <input type="hidden" id="publicacion-fecha">
+                <input type="hidden" id="approvalPercentage">
+                <input type="hidden" id="corrections">
+                <input type="hidden" id="platform">
+                <input type="hidden" id="postUrl">
+                <input type="hidden" id="multimediaUrl">
+                <input type="hidden" id="deletedAt">
+                <section>
+                    <button id="boton-enviar">Enviar</button>
+                </section>
+    
+            </form>
+        
+
+        </div>
+    <script type="module" src="/src/typeScript/home.ts"></script>
+
+</body>
+</html>
